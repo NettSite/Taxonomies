@@ -1,8 +1,6 @@
-<?php namespace Lecturize\Taxonomies;
+<?php namespace NettSite\Taxonomies;
 
-use Illuminate\Support\ServiceProvider;
-
-class TaxonomiesServiceProvider extends ServiceProvider
+class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     protected $migrations = [
         'CreateTaxonomiesTable' => 'create_taxonomies_table'
@@ -42,9 +40,9 @@ class TaxonomiesServiceProvider extends ServiceProvider
     {
         $configPath = __DIR__ . '/../config/config.php';
 
-        $this->publishes([$configPath => config_path('lecturize.php')]);
+        $this->publishes([$configPath => config_path('nettsite.php')]);
 
-        $this->mergeConfigFrom($configPath, 'lecturize');
+        $this->mergeConfigFrom($configPath, 'nettsite');
     }
 
     /**

@@ -1,4 +1,4 @@
-<?php namespace Lecturize\Taxonomies\Contracts;
+<?php namespace NettSite\Taxonomies\Contracts;
 
 interface TaxableInterface
 {

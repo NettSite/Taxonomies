@@ -25,9 +25,9 @@ class CreateTaxonomiesTable extends Migration
      */
     public function __construct()
     {
-        $this->table_terms      = config('lecturize.taxonomies.table_terms',      'terms');
-        $this->table_taxonomies = config('lecturize.taxonomies.table_taxonomies', 'taxonomies');
-        $this->table_pivot      = config('lecturize.taxonomies.table_pivot',      'taxables');
+        $this->table_terms      = config('nettsite.taxonomies.table_terms',      'terms');
+        $this->table_taxonomies = config('nettsite.taxonomies.table_taxonomies', 'taxonomies');
+        $this->table_pivot      = config('nettsite.taxonomies.table_pivot',      'taxables');
     }
 
     /**

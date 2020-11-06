@@ -1,13 +1,13 @@
-<?php namespace Lecturize\Taxonomies\Traits;
+<?php namespace NettSite\Taxonomies\Traits;
 
-use Lecturize\Taxonomies\Models\Taxable;
-use Lecturize\Taxonomies\Models\Taxonomy;
-use Lecturize\Taxonomies\Models\Term;
-use Lecturize\Taxonomies\TaxableUtils;
+use NettSite\Taxonomies\Models\Taxable;
+use NettSite\Taxonomies\Models\Taxonomy;
+use NettSite\Taxonomies\Models\Term;
+use NettSite\Taxonomies\TaxableUtils;
 
 /**
  * Class HasTaxonomies
- * @package Lecturize\Taxonomies\Traits
+ * @package NettSite\Taxonomies\Traits
  */
 trait HasTaxonomies
 {

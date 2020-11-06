@@ -1,6 +1,6 @@
-[![Latest Stable Version](https://poser.pugx.org/lecturize/laravel-taxonomies/v/stable)](https://packagist.org/packages/lecturize/laravel-taxonomies)
-[![Total Downloads](https://poser.pugx.org/lecturize/laravel-taxonomies/downloads)](https://packagist.org/packages/lecturize/laravel-taxonomies)
-[![License](https://poser.pugx.org/lecturize/laravel-taxonomies/license)](https://packagist.org/packages/lecturize/laravel-taxonomies)
+[![Latest Stable Version](https://poser.pugx.org/nettsite/taxonomies/v/stable)](https://packagist.org/packages/nettsite/taxonomies)
+[![Total Downloads](https://poser.pugx.org/nettsite/taxonomies/downloads)](https://packagist.org/packages/nettsite/taxonomies)
+[![License](https://poser.pugx.org/nettsite/taxonomies/license)](https://packagist.org/packages/nettsite/taxonomies)
 
 # Laravel Taxonomies
 
@@ -10,38 +10,15 @@ Simple, nestable Terms & Taxonomies (similar to WordPress) for Laravel 5.
 
 **This package is a work in progress**, please use with care and feel free to report any issues or ideas you may have!
 
-We've transferred this package to a new owner and therefor updated the namespaces to **Lecturize\Taxonomies**. The config file is now `config/lecturize.php`.
-
-## Installation
-
-Require the package from your `composer.json` file
-
-```php
-"require": {
-    "lecturize/laravel-taxonomies": "dev-master"
-}
-```
-
-and run `$ composer update` or both in one with `$ composer require lecturize/laravel-taxonomies`.
-
-Next register the service provider and (optional) facade to your `config/app.php` file
-
-```php
-'providers' => [
-    // ...
-    Cviebrock\EloquentSluggable\ServiceProvider::class,
-    Lecturize\Taxonomies\TaxonomiesServiceProvider::class,
-];
-```
+We have forked this repository and therefor updated the namespaces to **NettSite\Taxonomies**. The config file is now `config/nettsite.php`.
 
 ## Configuration & Migration
 
 ```bash
-$ php artisan vendor:publish --provider="Cviebrock\EloquentSluggable\ServiceProvider"
-$ php artisan vendor:publish --provider="Lecturize\Taxonomies\TaxonomiesServiceProvider"
+$ php artisan vendor:publish --provider="NettSite\Taxonomies\TaxonomiesServiceProvider"
 ```
 
-This will create a `config/sluggable.php`, a `config/lecturize.php` and a migration file, that you'll have to run like so:
+This will create a `config/nettsite.php` and a migration file, that you'll have to run like so:
 
 ```bash
 $ php artisan migrate
@@ -54,7 +31,7 @@ First, add our `HasTaxonomies` trait to your model.
 ```php
 <?php namespace App\Models;
 
-use Lecturize\Taxonomies\Traits\HasTaxonomies;
+use NettSite\Taxonomies\Traits\HasTaxonomies;
 
 class Post extends Model
 {

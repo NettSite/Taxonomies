@@ -1,11 +1,11 @@
-<?php namespace Lecturize\Taxonomies;
+<?php namespace NettSite\Taxonomies;
 
-use Lecturize\Taxonomies\Models\Taxonomy;
-use Lecturize\Taxonomies\Models\Term;
+use NettSite\Taxonomies\Models\Taxonomy;
+use NettSite\Taxonomies\Models\Term;
 
 /**
  * Class TaxableUtils
- * @package Lecturize\Taxonomies
+ * @package NettSite\Taxonomies
  */
 class TaxableUtils
 {

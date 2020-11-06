@@ -1,4 +1,4 @@
-<?php namespace Lecturize\Taxonomies\Models;
+<?php namespace NettSite\Taxonomies\Models;
 
 use Cviebrock\EloquentSluggable\Sluggable;
 
@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class Term
- * @package Lecturize\Taxonomies\Models
+ * @package NettSite\Taxonomies\Models
  */
 class Term extends Model
 {
@@ -34,7 +34,7 @@ class Term extends Model
     {
         parent::__construct($attributes);
 
-        $this->table = config('lecturize.taxonomies.table_terms', 'terms');
+        $this->table = config('nettsite.taxonomies.table_terms', 'terms');
     }
 
     /**

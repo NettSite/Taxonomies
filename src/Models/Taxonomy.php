@@ -1,11 +1,11 @@
-<?php namespace Lecturize\Taxonomies\Models;
+<?php namespace NettSite\Taxonomies\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class Taxonomy
- * @package Lecturize\Taxonomies\Models
+ * @package NettSite\Taxonomies\Models
  */
 class Taxonomy extends Model
 {
@@ -34,7 +34,7 @@ class Taxonomy extends Model
     {
         parent::__construct($attributes);
 
-        $this->table = config('lecturize.taxonomies.table_taxonomies', 'taxonomies');
+        $this->table = config('nettsite.taxonomies.table_taxonomies', 'taxonomies');
     }
 
     /**
